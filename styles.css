@@ -1,0 +1,162 @@
+
+:root{
+    --sidebar-width: var(600px);
+    --body-width: var(100vw);
+    --form-width: calc(100vw - 600px)
+}
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    
+
+    /* outline: 1px solid red; */
+}
+
+
+body{
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+.img-sidebar{
+    background-size: cover;
+    background-image: url(bruce-barrow-5NlhK5Yr3-4-unsplash.jpg);
+    height: 100%;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.logo-container{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    height: 170px;
+    background-color: rgba(0, 0, 0, 0.233);
+    width: 100%;
+    
+}
+img{
+    height: 150px;
+}
+
+.logo-name{
+    
+    font-size: 100px;
+    font-family: 'Tilt Prism', cursive;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.credit-container{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+}
+.credit, a{
+    text-align: center;
+    color: white;
+}
+
+.right-side{
+    height: 100vh;
+    width: var(--form-width);
+    background-color: rgb(150, 150, 150);
+}
+
+.title-container{
+    padding: 150px 50px 50px;
+    margin: 0;
+}
+
+.title-1{
+    font-size: 24px;
+
+}
+
+.title-2{
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+.form-container{
+    color: black;
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 30px;
+    width: var(--form-width);
+    box-shadow: 2px 10px 8px rgb(78, 78, 78);
+}
+
+.form-title{
+    font-size: 24px;
+
+}
+
+.form{
+    padding: 0;
+    margin: 30px;
+}
+
+.full-name, .contact, .password-form{
+    display: flex;
+    gap: 100px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+
+.input input{
+        background-color: #FFFFFF;
+        border: 1px solid #D6D9DC;
+        border-radius: 3px;
+        width: 300px;
+        padding: 7px;
+        font-size: 14px;
+      
+
+}
+
+
+.account-container{
+    padding-left: 50px;
+    
+}
+
+.account{
+    background-color: black;
+    color: aliceblue;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.password:valid{
+    border-color: green;
+}
+
+.password:invalid{
+    border-color: red;
+}
